@@ -8,7 +8,7 @@ body {
 .div-title {
     display:flex;
     gap:1.5rem;
-    border-bottom: 4px solid #c3853e;
+    border-bottom: 5px solid #c3853e;
     padding-bottom: 1rem;
 }
 
@@ -16,9 +16,18 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
+    gap:5rem;
+    border: 6px solid #504b72;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.div-content2 {
+    display: grid;
+    justify-items: center;
     gap:2rem;
-    border: 4px solid #121211;
-    padding: 1rem;
+    border: 6px solid #504b72;
+    padding: 2rem;
     border-radius: 30px;
 }
 
@@ -26,8 +35,25 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 130px;
-    height:130px;
-    border-radius: 70%;
-    background-color: #bdbab8;
+    width: 200px;
+    height:120px;
+    gap:5rem;
+    border-radius: 30%;
+    color: white; 
+    background-color: #a4a0c2;
+    border-color: black;
+    border: 4px solid #838284;
+}
+
+
+.circle-container {
+    display: grid;
+    width:180px;
+    gap: 1.5rem;           
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none; 
 }
