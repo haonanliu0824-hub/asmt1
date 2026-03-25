@@ -1,0 +1,33 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.div-title {
+    display:flex;
+    gap:1.5rem;
+    border-bottom: 4px solid #c3853e;
+    padding-bottom: 1rem;
+}
+
+.div-content {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    border: 4px solid #121211;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.circle {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 130px;
+    height:130px;
+    border-radius: 70%;
+    background-color: #bdbab8;
+}
