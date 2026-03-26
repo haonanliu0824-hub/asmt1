@@ -28,34 +28,68 @@
         
         
     </div>
+
     <br>
     <br>
+
     <div class="div-content" style="gap: 1rem;">
         
-        
-        <img src="image_resource/home1.jpg" alt="no" width=400px height = "300px">
-        <img src="image_resource/home2.jpg" alt="no" width=400px height = "300px">
-        <img src="image_resource/home3.jpg" alt="no" width=400px height = "300px">
-        
+        <img src="image_resource/home1.jpg" alt="no" width=350px height = "300px">
+        <img src="image_resource/home2.jpg" alt="no" width=350px height = "300px">
+        <img src="image_resource/home3.jpg" alt="no" width=350px height = "300px">
         
     </div>
+
     <br>
     <br>
+
     <div class="div-content" style="gap: 1rem;">
         <img src="image_resource/demonstrate_page.jpg" alt="no" width=400px height = "300px">
-
-        
         
     </div>
     
     <br>
     <br>
+    <br>
+    <h1>Process of Site</h1>
 
     <div class="div-content">
+        <img id = "process_id" src="image_resource/first_web.png"" alt="no" width = 750px height=" 390px">
+
+        <button id="prevBtn" style="width: 100px;">◀ Previous</button>
+        <button id="nextBtn" style="width: 100px;">Next ▶</button>
+
+       <script>
+        // image list
+            const process_images = [
+                "image_resource/first_web.png",
+                "image_resource/second_web.png",
+                "image_resource/third_web.png",
+                "image_resource/documentation.png"
+            ];
+            const process_img = document.getElementById("process_id");
+            let current_index = 0;
+
+            function change_image_src(num) {
+                return function() {
+                    previous_index = current_index
+                    current_index = current_index + num;
+                    if (current_index + 1> process_images.length || current_index < 0) {
+                        current_index = previous_index;
+                    }
+                    process_img.src = process_images[current_index];
+                }
+                
+            }
+
+            change_image_src(current_index);
+            document.getElementById("nextBtn").addEventListener("click", change_image_src(1));
+            document.getElementById("prevBtn").addEventListener("click", change_image_src(-1));
+
+            
         
-        
-        <h2>Process of Site</h2>
-        
+            
+       </script>
     </div>
     
 </body>
